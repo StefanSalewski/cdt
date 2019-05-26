@@ -1,4 +1,4 @@
-import cdt, vectors, edges, types
+import cdt/[dt, vectors, edges, types]
 import random, parseutils, OS, math, tables
 
 const

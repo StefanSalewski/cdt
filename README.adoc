@@ -46,7 +46,7 @@ Sketch of basic use is like this:
 [source,nim]
 .t0.nim
 ----
-import cdt, vectors, edges, types
+import cdt/[dt, vectors, edges, types]
 
 proc main =
   var dt: DelaunayTriangulation = initDelaunayTriangulation(initVector(minX, minY), initVector(maxX, maxY))

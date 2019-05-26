@@ -1,6 +1,6 @@
-import cdt, vectors, edges, types
+import cdt/[dt, vectors, edges, types]
 import gintro/cairo
-import drawingarea
+import cdt/drawingarea
 import random, parseutils, OS, math, tables
 
 const
@@ -42,7 +42,8 @@ proc main =
         discard dt.insert(myrand()[0])
         discard dt.insert(myrand()[0])
         discard dt.insert(myrand())
-      return
+      return
+
     case i:
       of 0: discard dt.insert(Vector(x: 10, y: 10), Vector(x: 20, y: 10), Vector(x: 20, y: 90), Vector(x: 10, y: 90), Vector(x: 10, y: 10))
       of 1: discard dt.insert(Vector(x: 30, y: 10), Vector(x: 40, y: 10), Vector(x: 40, y: 90), Vector(x: 30, y: 90), Vector(x: 30, y: 10))
