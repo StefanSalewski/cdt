@@ -2,11 +2,10 @@
 
 version       = "0.1.0"
 author        = "Stefan Salewski"
-description   = "A new awesome nimble package"
+description   = "Incremental (Fully Dynamic) Constrained_Delaunay_Triangulation"
 license       = "MIT"
 srcDir        = "src"
 
-
 # Dependencies
 
-requires "nim >= 0.19.9"
+requires "nim >= 1.0.0"

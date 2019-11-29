@@ -104,7 +104,8 @@ func distanceLinePointSqr*(p1, p2, p3: Vector): (float, float, float, float, flo
   if u < 0:
     v2 = (x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1)
   elif u > 1:
-    v2 = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)
+    # v2 = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1) # stupid typo in initial release!
+    v2 = (x3 - x2) * (x3 - x2) + (y3 - y2) * (y3 - y2)
   else:
     v2 = d2
   return (d2, v2, u, x, y)
