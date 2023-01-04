@@ -30,7 +30,8 @@ type
   Edge* = ref object
     quadEdge*: QuadEdge
     vertex*: Vertex
-    next*{.cursor.}: Edge # added {.cursor.} for v 0.1.1
+    #next*{.cursor.}: Edge # added {.cursor.} for v 0.1.1
+    next*: Edge # {.cursor.} is not longer needed for ARC, and generates a crash with ORC
     num*: int # 0 .. 3
 
 proc `$`*(v: Vertex): string =
